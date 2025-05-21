@@ -1,13 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <form id="form">
+      <fieldset>
+        <label for="player_name">Name</label>
+        <input type="text" name="player_name" />
+        <label for="position">Position</label>
+        <input type="text" name="position" />
+        <label for="nationality">Nationality</label>
+        <input type="text" name="nationality" />
+        <label for="dob">Date of Birth</label>
+        <input type="text" name="dob" />
+        <label for="squad_number">Squad Number</label>
+        <input type="text" name="squad_number" />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
   </body>
 </html>
