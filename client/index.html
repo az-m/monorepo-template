@@ -14,10 +14,21 @@
         <label for="player_name">Name</label>
         <input type="text" name="player_name" />
         <label for="position">Position</label>
-        <input type="text" name="position" />
+        <select name="position">
+          <option value="" hidden>--select--</option>
+          <option value="goalkeeper">goalkeeper</option>
+          <option value="right-back">right-back</option>
+          <option value="left-back">left-back</option>
+          <option value="centre-back">centre-back</option>
+          <option value="defensive-midfield">defensive-midfield</option>
+          <option value="centre-midfield">centre-midfield</option>
+          <option value="attacking-midfield">attacking-midfield</option>
+          <option value="winger">winger</option>
+          <option value="forward">forward</option>
+        </select>
         <label for="nationality">Nationality</label>
         <input type="text" name="nationality" />
-        <label for="dob">Date of Birth</label>
+        <label for="dob">Date of Birth (YYYY-MM-DD)</label>
         <input type="text" name="dob" />
         <label for="squad_number">Squad Number</label>
         <input type="text" name="squad_number" />

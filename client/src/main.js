@@ -1,3 +1,4 @@
+const apiRoot = import.meta.env.VITE_API_ROOT;
 const form = document.getElementById("form");
 
 function handleSubmit(event) {
@@ -6,7 +7,7 @@ function handleSubmit(event) {
   const formData = new FormData(form);
   const formValues = Object.fromEntries(formData);
 
-  const API = import.meta.env.VITE_API_ROOT + "addPlayer";
+  const API = apiRoot + "addPlayer";
 
   fetch(API, {
     method: "POST",
